@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/styles/styles.css" rel="stylesheet">
     <title>Document</title>
-    <script src="app.js"></script>
+    
 </head>
 <body>
     <div>
@@ -13,6 +14,25 @@
         <button onclick="changeToBlue()">Blue</button>
         <button onclick="changeToPink()">Pink</button>
         <button onclick="changeToYellow()">Yellow</button>
+    </div>
+    <img id="app" src="">
+    <div class="avatarContainer">
+        <h1>Image Upload 
+            <small>with preview</small>
+        </h1>
+        <div class="avatar-upload">
+            <div class="avatar-edit">
+                <input type = 'file' id = "imageUpload" accept=".png, .jpg, .jpeg" />
+                <label for ="imageUpload"></label>
+                
+                
+            </div>
+            <div class="avatar-preview">
+                <div id="clock" style="background-image: url(https://4.bp.blogspot.com/-H232JumEqSc/WFKY-6H-zdI/AAAAAAAAAEw/DcQaHyrxHi863t8YK4UWjYTBZ72lI0cNACLcB/s1600/profile%2Bpicture.png);">
+                </div>
+            </div>
+            
+        </div>
     </div>
     <script type="text/javascript" src="app.js"></script>
 </body>

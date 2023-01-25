@@ -20,10 +20,12 @@ function readURL(){
 	// var s = document.querySelectorAll(".loader").style;
 	// s.opacity = 1;
 	
-	// document.querySelectorAll(".loader").fadeOut("1000"); 
+	// document.querySelectorAll(".loader").fadeOut("1000");
+    $(".loader").removeClass('defaultViewLoader').attr("value",""); 
     $(".loader").addClass('button_loader').attr("value","");
     window.setTimeout(function(){
         $('.loader').removeClass('button_loader').attr("value","\u2713");
+        $(".loader").addClass('defaultViewLoader').attr("value","");
         $('.loader').prop('disabled', true);
       }, 3000);
     const file = document.getElementById("imageUpload").files[0];

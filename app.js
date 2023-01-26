@@ -21,12 +21,16 @@ function readURL(){
 	// s.opacity = 1;
 	
 	// document.querySelectorAll(".loader").fadeOut("1000");
+    $("#umbrellaImage").addClass("defaultViewLoader")
+    $("#mainLogo").addClass("defaultViewLoader")
     $(".loader").removeClass('defaultViewLoader').attr("value",""); 
     $(".loader").addClass('button_loader').attr("value","");
     window.setTimeout(function(){
         $('.loader').removeClass('button_loader').attr("value","\u2713");
         $(".loader").addClass('defaultViewLoader').attr("value","");
         $('.loader').prop('disabled', true);
+        $("#umbrellaImage").removeClass("defaultViewLoader")
+        $("#mainLogo").removeClass("defaultViewLoader")
       }, 3000);
     const file = document.getElementById("imageUpload").files[0];
     const reader = new FileReader();

@@ -1,14 +1,47 @@
 var imgApp = document.querySelector('#app');
 
 function changeToBlue(){
+    $("#umbrellaImage").addClass("defaultViewLoader")
+    $("#mainLogo").addClass("defaultViewLoader")
+    $(".loader").removeClass('defaultViewLoader').attr("value",""); 
+    $(".loader").addClass('button_loader').attr("value","");
+    window.setTimeout(function(){
+        $('.loader').removeClass('button_loader').attr("value","\u2713");
+        $(".loader").addClass('defaultViewLoader').attr("value","");
+        $('.loader').prop('disabled', true);
+        $("#umbrellaImage").removeClass("defaultViewLoader")
+        $("#mainLogo").removeClass("defaultViewLoader")
+      }, 3000);
     document.getElementById("umbrellaImage").src = './assets/img/Blue umbrella.png';
 }
 
 function changeToPink(){
+    $("#umbrellaImage").addClass("defaultViewLoader")
+    $("#mainLogo").addClass("defaultViewLoader")
+    $(".loader").removeClass('defaultViewLoader').attr("value",""); 
+    $(".loader").addClass('button_loader').attr("value","");
+    window.setTimeout(function(){
+        $('.loader').removeClass('button_loader').attr("value","\u2713");
+        $(".loader").addClass('defaultViewLoader').attr("value","");
+        $('.loader').prop('disabled', true);
+        $("#umbrellaImage").removeClass("defaultViewLoader")
+        $("#mainLogo").removeClass("defaultViewLoader")
+      }, 3000);
     document.getElementById("umbrellaImage").src = './assets/img/Pink umbrella.png';
 }
 
 function changeToYellow(){
+    $("#umbrellaImage").addClass("defaultViewLoader")
+    $("#mainLogo").addClass("defaultViewLoader")
+    $(".loader").removeClass('defaultViewLoader').attr("value",""); 
+    $(".loader").addClass('button_loader').attr("value","");
+    window.setTimeout(function(){
+        $('.loader').removeClass('button_loader').attr("value","\u2713");
+        $(".loader").addClass('defaultViewLoader').attr("value","");
+        $('.loader').prop('disabled', true);
+        $("#umbrellaImage").removeClass("defaultViewLoader")
+        $("#mainLogo").removeClass("defaultViewLoader")
+      }, 3000);
     document.getElementById("umbrellaImage").src = './assets/img/Yello umbrella.png';
 }
 

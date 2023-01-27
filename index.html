@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="./assets/styles/styles.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -12,11 +13,10 @@
 </head>
 <body>
     <div class="container">
-    <div class="row">
-        <div class="col-12 col-sm-6">
-            <img id = "umbrellaImage" src="./assets/img/Blue umbrella.png" style="max-height: 300px;width: auto;" class="img-fluid">
-            
-        </div>
+        <div class="row">
+            <div class="col-12 col-sm-6">
+                <img id = "umbrellaImage" src="./assets/img/Blue umbrella.png" style="max-height: 300px;width: auto;" class="img-fluid">
+            </div>
         <div class="card col-12 col-sm-6" style="width: 18rem;">
             <div class="card-body">
               <h5 class="card-title">Custom Umbrella</h5>
@@ -29,33 +29,32 @@
               <h6 class="card-subtitle mb-2 text-muted">Customize your umbrella</h6>
               <p class="card-text">Upload a logo for an instant preview.</p>
               <p class="card-text">.png and .jpg files only.Max file size 5MB.</p>
-              <!-- <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a> -->
+              
               <div class="avatarContainer">
-                <!-- <h1>Image Upload 
-                    <small>with preview</small>
-                </h1> -->
-                <div class="avatar-upload">
-                    <div class="avatar-edit">
-                        <input type = 'file' id = "imageUpload" accept=".png, .jpg, .jpeg"/>
-                        <label for ="imageUpload"></label>
-                        
-                        
+                <div class="row" style="background-color: steelblue;">
+                    <div class="col-12 col-sm-6">
+                        <h1 style="padding-left: 20px;">Upload Logo</h1>
                     </div>
-                    <div><img src="./assets/img/loader_icon.svg" class="loader defaultViewLoader"></div>
-                    <div class="avatar-preview" id="mainLogo">
-                        <div id="clock" style="background-image: none;">
+                    <div class="col-12 col-sm-6">
+                        <div class="avatar-upload">
+                            <div class="avatar-edit">
+                                <input type = 'file' id = "imageUpload" accept=".png, .jpg, .jpeg">
+                                <label for ="imageUpload"><i class="fa fa-upload" aria-hidden="true"></i></label>
+                            </div>
+                            <div>
+                                <img src="./assets/img/loader_icon.svg" class="loader defaultViewLoader" style="height: 100px;width: 100px;">
+                            </div>
+                            <div class="avatar-preview" id="mainLogo">
+                                <div id="clock" style="background-image: none;">
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    
                 </div>
             </div>
             </div>
-          </div>
+        </div>
     </div>
-    
-    <img id="app" src="">
-   
 </div>
     <script type="text/javascript" src="app.js"></script>
 </body>
